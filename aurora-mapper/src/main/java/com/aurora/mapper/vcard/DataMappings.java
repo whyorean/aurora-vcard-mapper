@@ -1,19 +1,5 @@
-package ezvcard.android;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-import android.provider.ContactsContract;
-import ezvcard.parameter.AddressType;
-import ezvcard.parameter.EmailType;
-import ezvcard.parameter.TelephoneType;
-import ezvcard.property.Address;
-import ezvcard.property.Email;
-import ezvcard.property.Impp;
-import ezvcard.property.Telephone;
-
 /*
+ Copyright (c) 2018, Aurora OSS
  Copyright (c) 2014-2015, Michael Angstadt
  All rights reserved.
 
@@ -42,14 +28,21 @@ import ezvcard.property.Telephone;
  either expressed or implied, of the FreeBSD Project.
  */
 
-/**
- * Maps between vCard contact data types and Android {@link ContactsContract}
- * data types.
- * 
- * @author Pratyush
- * @author Julien Garrigou
- * @author Michael Angstadt
- */
+package com.aurora.mapper.vcard;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import android.provider.ContactsContract;
+import ezvcard.parameter.AddressType;
+import ezvcard.parameter.EmailType;
+import ezvcard.parameter.TelephoneType;
+import ezvcard.property.Address;
+import ezvcard.property.Email;
+import ezvcard.property.Impp;
+import ezvcard.property.Telephone;
+
 public class DataMappings {
     private static final Map<TelephoneType, Integer> phoneTypeMappings;
     static {

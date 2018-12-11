@@ -1,1 +1,1 @@
-include ':android-mapper'
+include ':aurora-mapper'
